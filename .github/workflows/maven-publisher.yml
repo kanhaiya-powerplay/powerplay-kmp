@@ -96,7 +96,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
         VERSION: ${{ steps.bump.outputs.version }}
       run: |
-          ./gradlew publishAndroidReleasePublicationToGitHubPackagesRepository
+          ./gradlew publishKotlinMultiplatformPublicationToGitHubPackagesRepository
 
       # STEP - 5 Commit & Push incremented version
     - name: Commit and push
