@@ -1,8 +1,8 @@
-package com.example.network.HTTPClientConfigurers
+package com.example.network.apiClientConfigurers
 
 import io.ktor.client.HttpClientConfig
 
 
-interface HTTPClientConfigurer{
+interface APIClientConfigurer{
     fun apply(config: HttpClientConfig<*>)
 }

@@ -2,42 +2,34 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidKotlinMultiplatformLibrary)
     alias(libs.plugins.serialization)
-
 }
 
 kotlin {
 
     androidLibrary {
-        namespace = "com.example.network"
+        namespace = "com.example.core"
         compileSdk = libs.versions.android.compileSdk.get().toInt()
         minSdk = libs.versions.android.minSdk.get().toInt()
     }
 
-
     iosArm64()
     iosSimulatorArm64()
 
+    compilerOptions {
+        freeCompilerArgs.add("-Xexpect-actual-classes")
+    }
 
     sourceSets {
         commonMain {
             dependencies {
                 implementation(libs.kotlin.stdlib)
-                implementation(libs.bundles.ktor)
-                implementation(project(":database"))
-                implementation(project(":core"))
+                implementation(libs.kotlinx.serialization)
             }
         }
 
-
-        androidMain {
+        androidMain{
             dependencies {
-                implementation(libs.android.ktor)
-            }
-        }
-
-        iosMain {
-            dependencies {
-                implementation(libs.ios.ktor)
+                implementation(libs.androidx.core)
             }
         }
     }

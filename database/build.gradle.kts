@@ -11,14 +11,25 @@ kotlin {
         minSdk = libs.versions.android.minSdk.get().toInt()
     }
 
-    iosX64()
     iosArm64()
     iosSimulatorArm64()
+
+    // For suppressing actual-expect warning using with object classes
+    compilerOptions {
+        freeCompilerArgs.add("-Xexpect-actual-classes")
+    }
 
     sourceSets {
         commonMain {
             dependencies {
                 implementation(libs.kotlin.stdlib)
+                implementation(project(":core"))
+            }
+        }
+
+        androidMain{
+            dependencies {
+                implementation(libs.androidx.core)
             }
         }
     }

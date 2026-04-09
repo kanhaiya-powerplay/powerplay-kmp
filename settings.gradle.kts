@@ -32,3 +32,4 @@ dependencyResolutionManagement {
 include(":shared")
 include(":network")
 include(":database")
+include(":core")
