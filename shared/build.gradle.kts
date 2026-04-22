@@ -41,27 +41,11 @@ kotlin {
     
     sourceSets {
         commonMain.dependencies {
-            implementation(project(":core"))
-            implementation(project(":network"))
+            api(project(":core"))
+            api(project(":network"))
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
-        }
-    }
-}
-group = "com.company.powerplay"
-version = System.getenv("VERSION") ?: "local"
-
-publishing {
-    repositories {
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/kanhaiya-powerplay/powerplay-kmp")
-
-            credentials {
-                username = System.getenv("GITHUB_ACTOR") ?: "kanhaiya-powerplay"
-                password = System.getenv("GITHUB_TOKEN")
-            }
         }
     }
 }
