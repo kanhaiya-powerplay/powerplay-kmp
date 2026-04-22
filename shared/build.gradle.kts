@@ -43,6 +43,7 @@ kotlin {
         commonMain.dependencies {
             api(project(":core"))
             api(project(":network"))
+            api(project(":database"))
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)

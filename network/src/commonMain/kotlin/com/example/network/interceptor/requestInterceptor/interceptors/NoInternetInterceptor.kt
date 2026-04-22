@@ -18,7 +18,7 @@ class NoInternetInterceptor: RequestInterceptor {
         APIResponse.Failure(
             NetworkError.NoInternet))
 
-    override fun shouldIntercept(request: APIRequest, responseType: DataTypeInfo): Boolean = NetworkMonitor.isOnline()
+    override fun shouldIntercept(request: APIRequest, responseType: DataTypeInfo): Boolean = !NetworkMonitor.isOnline()
 
     override fun priority(): InterceptorPriority = InterceptorPriority.CRITICAL
 }
