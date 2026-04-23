@@ -4,11 +4,31 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="059f1712-1e07-4595-b982-ece909b67483" name="Changes" comment="change ktor version">
+    <list default="true" id="059f1712-1e07-4595-b982-ece909b67483" name="Changes" comment="change intercept value">
+      <change afterPath="$PROJECT_DIR$/network/src/androidMain/kotlin/com/example/network/KMP.android.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/logging/ApiCallLog.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/logging/ApiCallLogger.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/logging/NetworkLoggers.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/interceptor/requestInterceptor/interceptors/NoInternetInterceptor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/interceptor/requestInterceptor/interceptors/NoInternetInterceptor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/androidMain/kotlin/com/example/core/KMPAndroidConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/KMPConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/KMPConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/KMPDebugObserver.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/dataService/models/APIRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/dataService/models/APIRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/commonMain/kotlin/com/example/database/StorageKeys.kt" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/commonMain/kotlin/com/example/database/StorageKeys.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/androidMain/kotlin/com/example/network/PowerplayKMPAndroid.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/androidMain/kotlin/com/example/network/createHttpClient.android.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/APIClientProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/APIClientProvider.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/APIResponseHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/APIResponseHandler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/BaseNetworkService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/BaseNetworkService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/HttpServiceFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/HttpServiceFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/apiClientConfigurers/configurations/defaultHeaderConfig/headers/AuthorizationHeader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/apiClientConfigurers/configurations/defaultHeaderConfig/headers/AuthorizationHeader.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/createHttpClient.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/iosMain/kotlin/com/example/network/createHttpClient.ios.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/shared/build/kotlin/commonizedNativeDistributionLocation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/commonizedNativeDistributionLocation.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/example/powerplaykmp/KMPInitConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/example/powerplaykmp/PowerplayKMP.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/example/powerplaykmp/SharedViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/example/powerplaykmp/SharedViewModel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776844469165</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="change intercept value">
+      <option name="closed" value="true" />
+      <created>1776851544214</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1776851544214</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -291,6 +319,7 @@
     <MESSAGE value="change in workspace.xml" />
     <MESSAGE value="change kotlin version" />
     <MESSAGE value="change ktor version" />
-    <option name="LAST_COMMIT_MESSAGE" value="change ktor version" />
+    <MESSAGE value="change intercept value" />
+    <option name="LAST_COMMIT_MESSAGE" value="change intercept value" />
   </component>
 </project>
