@@ -4,11 +4,12 @@ import com.example.database.KeyValueStorage
 import com.example.database.StorageKeys
 import com.example.network.apiClientConfigurers.configurations.defaultHeaderConfig.APIHeader
 
-
-class AuthorizationHeader: APIHeader {
+class AuthorizationHeader : APIHeader {
 
     override fun key(): String = "Authorization"
 
-    override fun value(): String = "Bearer ${KeyValueStorage.get<String>(StorageKeys.AUTH_TOKEN)}"
-
+    override fun value(): String {
+        val token = KeyValueStorage.get<String>(StorageKeys.AUTH_TOKEN)
+        return if (token.isNullOrEmpty()) "" else "Bearer $token"
+    }
 }
