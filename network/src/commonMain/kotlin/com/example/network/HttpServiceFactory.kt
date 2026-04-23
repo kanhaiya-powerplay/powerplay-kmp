@@ -12,36 +12,41 @@ import io.ktor.client.request.put
 import io.ktor.client.request.setBody
 import io.ktor.client.statement.HttpResponse
 import io.ktor.http.Url
+import io.ktor.util.reflect.TypeInfo
 
 object HttpServiceFactory {
 
-    suspend fun execute(client: HttpClient, request: APIRequest): HttpResponse{
-
-        return getService(client, request){
+    suspend fun execute(client: HttpClient, request: APIRequest): HttpResponse {
+        return getService(client, request) {
             request.parameters.forEach {
                 parameter(it.key, it.value)
             }
-            request.body?.let {
-                setBody(it)
+            request.body?.let { wrapper ->
+                val payload = wrapper.body ?: return@let
+
+                wrapper.bodyType?.let { dti ->
+                    setBody(payload, TypeInfo(dti.type, dti.kotlinType))
+                } ?: setBody(payload)
             }
         }
     }
 
-    private suspend fun getService(client: HttpClient, request: APIRequest, block: HttpRequestBuilder.() -> Unit): HttpResponse {
+    private suspend fun getService(
+        client: HttpClient,
+        request: APIRequest,
+        block: HttpRequestBuilder.() -> Unit
+    ): HttpResponse = when (request.method) {
+        APIMethod.GET ->
+            client.get(request.url, block)
 
-        return when(request.method){
-            APIMethod.GET ->
-                client.get(request.url, block)
+        APIMethod.PUT ->
+            client.put(request.url, block)
 
-            APIMethod.PUT ->
-                client.put(request.url, block)
+        APIMethod.POST ->
+            client.post(request.url, block)
 
-            APIMethod.POST ->
-                client.post(request.url, block)
-
-            APIMethod.DELETE ->
-                client.delete(request.url, block)
-        }
+        APIMethod.DELETE ->
+            client.delete(request.url, block)
     }
 }
 
