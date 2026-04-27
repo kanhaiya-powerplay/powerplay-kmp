@@ -4,31 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="059f1712-1e07-4595-b982-ece909b67483" name="Changes" comment="change intercept value">
-      <change afterPath="$PROJECT_DIR$/network/src/androidMain/kotlin/com/example/network/KMP.android.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/logging/ApiCallLog.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/logging/ApiCallLogger.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/logging/NetworkLoggers.kt" afterDir="false" />
+    <list default="true" id="059f1712-1e07-4595-b982-ece909b67483" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/androidMain/kotlin/com/example/core/KMPAndroidConfig.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/KMPConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/KMPConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/KMPDebugObserver.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/dataService/models/APIRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/dataService/models/APIRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/commonMain/kotlin/com/example/database/StorageKeys.kt" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/commonMain/kotlin/com/example/database/StorageKeys.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/src/androidMain/kotlin/com/example/network/PowerplayKMPAndroid.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/src/androidMain/kotlin/com/example/network/createHttpClient.android.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/APIClientProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/APIClientProvider.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/APIResponseHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/APIResponseHandler.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/BaseNetworkService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/BaseNetworkService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/HttpServiceFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/HttpServiceFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/apiClientConfigurers/configurations/defaultHeaderConfig/headers/AuthorizationHeader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/apiClientConfigurers/configurations/defaultHeaderConfig/headers/AuthorizationHeader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/createHttpClient.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/src/iosMain/kotlin/com/example/network/createHttpClient.ios.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shared/build/kotlin/commonizedNativeDistributionLocation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/commonizedNativeDistributionLocation.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/example/powerplaykmp/KMPInitConfig.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/example/powerplaykmp/PowerplayKMP.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/example/powerplaykmp/SharedViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/example/powerplaykmp/SharedViewModel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,12 +28,14 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PowerplayKMP" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -123,11 +106,11 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "integrate-debug-tool",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/powerplay/AndroidStudioProjects/powerplay_kmp",
+    "last_opened_file_path": "/Users/deepakgoyal/Documents/powerplay_kmp/core/src/androidMain/kotlin/com/example/core/connectivity",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie"
+    "settings.editor.selected.configurable": "inlay.hints"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -149,9 +132,10 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.kmp-project">
-    <configuration default="true" type="Application" factoryName="Application">
+    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" IS_LOCATION_SIMULATION_SUPPORTED="false" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" DEVELOPMENT_TEAM="${TEAM_ID}" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <embedded_app_extension_list />
       <method v="2">
-        <option name="Make" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="kmp-project" type="GradleRunConfiguration" factoryName="Gradle">
@@ -254,72 +238,6 @@
       <option name="presentableId" value="Default" />
       <updated>1773548638444</updated>
     </task>
-    <task id="LOCAL-00001" summary="add dependency">
-      <option name="closed" value="true" />
-      <created>1776839344386</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1776839344386</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add api for project plan for mocking">
-      <option name="closed" value="true" />
-      <created>1776839362391</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1776839362391</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add dependency">
-      <option name="closed" value="true" />
-      <created>1776840972417</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1776840972417</updated>
-    </task>
-    <task id="LOCAL-00004" summary="change in workspace.xml">
-      <option name="closed" value="true" />
-      <created>1776841555197</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1776841555197</updated>
-    </task>
-    <task id="LOCAL-00005" summary="change kotlin version">
-      <option name="closed" value="true" />
-      <created>1776843809456</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1776843809456</updated>
-    </task>
-    <task id="LOCAL-00006" summary="change ktor version">
-      <option name="closed" value="true" />
-      <created>1776844469165</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1776844469165</updated>
-    </task>
-    <task id="LOCAL-00007" summary="change intercept value">
-      <option name="closed" value="true" />
-      <created>1776851544214</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1776851544214</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="add api for project plan for mocking" />
-    <MESSAGE value="add dependency" />
-    <MESSAGE value="change in workspace.xml" />
-    <MESSAGE value="change kotlin version" />
-    <MESSAGE value="change ktor version" />
-    <MESSAGE value="change intercept value" />
-    <option name="LAST_COMMIT_MESSAGE" value="change intercept value" />
   </component>
 </project>

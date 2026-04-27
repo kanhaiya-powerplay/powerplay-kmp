@@ -50,3 +50,18 @@ kotlin {
         }
     }
 }
+
+publishing {
+    repositories {
+        group = "com.company.powerplay"
+        version = System.getenv("VERSION") ?: "local"
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/Deepakgoyal-iOS/powerplay_kmp")
+            credentials {
+                username = "Deepakgoyal-iOS"
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
+}
