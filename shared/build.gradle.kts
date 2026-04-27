@@ -41,7 +41,9 @@ kotlin {
     
     sourceSets {
         commonMain.dependencies {
-            implementation(project(":network"))
+            api(project(":core"))
+            api(project(":network"))
+            api(project(":database"))
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
