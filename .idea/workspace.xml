@@ -5,11 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="059f1712-1e07-4595-b982-ece909b67483" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/androidMain/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/androidMain/kotlin/com/example/core/AppProvider.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/androidMain/kotlin/com/example/core/AppVersion.android.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/androidMain/kotlin/com/example/core/connectivity/NetworkMonitor.android.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/AppVersion.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/connectivity/NetworkMonitor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/dataService/BaseDataService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/dataService/models/APIError.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/dataService/models/APIMethod.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/dataService/models/APIRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/dataService/models/APIResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/dataService/models/AppError.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/dataService/models/DataTypeInfo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/commonMain/kotlin/com/example/core/dataService/models/ErrorItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/iosMain/kotlin/com/example/core/AppVersion.ios.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/iosMain/kotlin/com/example/core/connectivity/NetworkMonitor.ios.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/commonMain/kotlin/com/example/database/StorageKeys.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/androidMain/kotlin/com/example/network/apiClientConfigurers/configurations/defaultHeaderConfig/headers/PlatformHeader.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/APIClientProvider.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/BaseAPIRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/BaseDataServiceExtension.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/BaseNetworkService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/DefaultNetworkService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/HttpServiceFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/NetworkAPIRoutes.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/NetworkError.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/apiClientConfigurers/APIRequestBuilder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/apiClientConfigurers/configurations/defaultHeaderConfig/APIHeader.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/apiClientConfigurers/configurations/defaultHeaderConfig/DefaultHeadersConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/apiClientConfigurers/configurations/defaultHeaderConfig/headers/AcceptLanguageHeader.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/apiClientConfigurers/configurations/defaultHeaderConfig/headers/AppVersionHeader.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/apiClientConfigurers/configurations/defaultHeaderConfig/headers/AuthorizationHeader.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/apiClientConfigurers/configurations/defaultHeaderConfig/headers/ContentTypeHeader.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/apiClientConfigurers/configurations/defaultHeaderConfig/headers/LanguageHeader.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/apiClientConfigurers/configurations/defaultHeaderConfig/headers/PlatformHeader.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/interceptor/InterceptorPriority.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/interceptor/RequestInterceptorExecutor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/interceptor/ResponseInterceptorExecutor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/interceptor/requestInterceptor/RequestInterceptor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/interceptor/requestInterceptor/RequestInterceptorResult.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/interceptor/requestInterceptor/interceptors/NoInternetInterceptor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/interceptor/responseInterceptor/ResponseInterceptor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/interceptor/responseInterceptor/interceptors/TokenExpiryInterceptor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/repository/RefreshTokenAPIRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/repository/models/RefreshTokenResponseModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/src/iosMain/kotlin/com/example/network/apiClientConfigurers/configurations/defaultHeaderConfig/headers/PlatformHeader.ios.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/commonizedNativeDistributionLocation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/commonizedNativeDistributionLocation.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/database/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/androidMain/kotlin/com/example/database/KeyValueStorage.android.kt" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/androidMain/kotlin/com/example/database/KeyValueStorage.android.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/commonMain/kotlin/com/example/database/KeyValueStorage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/commonMain/kotlin/com/example/database/KeyValueStorage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/iosMain/kotlin/com/example/database/KeyValueStorage.ios.kt" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/iosMain/kotlin/com/example/database/KeyValueStorage.ios.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/network/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/androidMain/kotlin/com/example/network/Platform.android.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/HTTPClientConfigurers/ContentNegotiationConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/apiClientConfigurers/configurations/ContentNegotiationConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/HTTPClientConfigurers/DefaultHeadersConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/HTTPClientConfigurers/HTTPClientConfigurer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/apiClientConfigurers/APIClientConfigurer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/HTTPClientProvider.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/Platform.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/APIResponseHandler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/ProjectsAPIService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/ProjectsAPIService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/src/iosMain/kotlin/com/example/network/Platform.ios.kt" beforeDir="false" afterPath="$PROJECT_DIR$/network/src/commonMain/kotlin/com/example/network/BaseAPIRoute.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +88,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -90,29 +153,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.kmp-project.executor": "Run",
-    "Gradle.local-maven.executor": "Run",
-    "Gradle.local-spm.executor": "Run",
-    "GradleDaemonJvmCriteriaMigrationNotification.isNotificationDisabled": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "integrate-debug-tool",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/deepakgoyal/Documents/powerplay_kmp/core/src/androidMain/kotlin/com/example/core/connectivity",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "inlay.hints"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.kmp-project.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.local-maven.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.local-spm.executor&quot;: &quot;Run&quot;,
+    &quot;GradleDaemonJvmCriteriaMigrationNotification.isNotificationDisabled&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;integrate-debug-tool&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/deepakgoyal/Documents/powerplay_kmp/core/src/androidMain/kotlin/com/example/core/connectivity&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/core/src/androidMain/kotlin/com/example/core/connectivity" />
